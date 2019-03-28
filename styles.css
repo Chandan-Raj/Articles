@@ -1,0 +1,56 @@
+.hdn{
+    text-align: center;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #38A2FF;
+}
+
+.nav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: black;
+    color: white;
+}
+
+body{
+    background-color: lightgray;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+.logo-img{
+    width: 50px;
+    height: 50 px;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+
+}

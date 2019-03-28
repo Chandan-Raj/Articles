@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+<header>
+        <h1 class="hdn">Article Submission</h1>
+        <br>
+        <br>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="Teams" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Teams
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#astralis">Astralis</a>
+                            <a class="dropdown-item" href="#liquid">Liquid</a>
+                            <a class="dropdown-item" href="#navi">NaVi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="form.html">Forms</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+        <br>
+        <br>
+</header>
+        <main>
+        <fieldset>
+            <legend>Submit Your Articles</legend>
+        <form method="get" id="frmPst" name="frm1" target="frmRst" action="response19.html">
+            <div class="form-group">
+        <label>Title: </label>
+            <input form="frmPst" type="text" name="title" placeholder="Title" required pattern="[A-Z]+[a-z]+[0-9]*" title="Should contain letters and numbers" spellcheck="true"><br>
+            </div>
+            <div class="form-group">
+                <label>Image:</label>
+            <input form="frmPst" name="location" list="urls" placeholder="Image Url">
+            <datalist id="urls">
+                <option label="Test" value="https://www.google.com/search?q=google+images&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwi-04i1s4DhAhUOZ1AKHcfYDD4Q_AUIDigB&biw=1536&bih=754#imgrc=YKVTF-GCt7tkiM:">
+            </datalist><br>
+            </div>
+            <div class="form-check">
+            <input form="frmPst" type="radio" name="Image1" value="Image">Upload Image
+            <input form="frmPst" type="radio" name="Image1" value="Image" checked>Default Image
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Body:</label>
+
+            <textarea class="form-control" title="body" name="body" rows="10" cols="80" placeholder="Write the Body for the Article" spellcheck="true"></textarea><br>
+            </div>
+                <input type="submit" value="submit">
+            <input type="reset" value="delete">
+            <a href="index.html" class="btn btn-warning">HomePage</a>
+        </form>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <form method="get" id="frmPst2" target="frmPst2" action="404.html">
+            <legend>Personal Info</legend>
+                <div class="form-group">
+            <label >Name:</label>
+                <input type="text" name="name" required placeholder="Required*" form="frmPst2"><br>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" required placeholder="Required" form="frmPst2"><br>
+                </div>
+                <div class="form-group">
+                    <label>Date:</label>
+                    <input type="date" name="date" form="frmPst2">
+                </div>
+            <input type="submit">
+            <input type="reset" value="delete"/>
+                <a href="index.html" class="btn btn-warning">HomePage</a>
+            </form>
+        </fieldset>
+
+        <br>
+        <br>
+            <fieldset>
+                <legend>Add Comments:</legend>
+            <form action="404.html">
+                <div class="form-group">
+                Name: <input  type="text" required name="name" spellcheck="true"><br>
+            </div>
+                <div>
+                Comment: <br>
+                <textarea name="comment" id="comment" spellcheck="true"></textarea><br>
+                </div>
+                <input type="submit" value="submit">
+            </form>
+            </fieldset>
+            <br>
+            <br>
+<footer>
+    This page was created by CHANDAN RAJ
+</footer>
+        </main>
+    </div>
+</div>
+</body>
+</html>
